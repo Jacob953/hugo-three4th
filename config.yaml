@@ -1,0 +1,42 @@
+baseURL: 'http://example.org/'
+author:
+  name: Jacob953
+copyright: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0  International License.
+languageCode: en-us
+title: Jacob953
+theme: three4th
+
+menu:
+  main:
+    - identifier: garden
+      name: garden
+      weight: 1
+    - essays:
+      name: essays
+      url: "/essays"
+      parent: garden
+      weight: 1
+    - notes:
+      name: notes
+      url: /notes
+      parent: garden
+      weight: 2
+    - lanes:
+      name: lanes
+      url: /lanes
+      parent: garden
+      weight: 3
+    - library:
+      name: library
+      url: /library
+      parent: garden
+      weight: 4
+    - cassette:
+      name: cassette
+      url: /cassette
+      weight: 2
+    - about:
+      name: about
+      url: /about
+      weight: 3
+
