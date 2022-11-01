@@ -1,42 +1,51 @@
 baseURL: 'http://example.org/'
-author:
+author: 
   name: Jacob953
+  email: i@jacob953.com
+  role: Day-dreamer, open-source ethusastic and currently working at Huawei
+  intro: makes funny things
 copyright: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0  International License.
 languageCode: en-us
-title: Jacob953
+title: JACO GARDEN
 theme: three4th
+
+params: 
+  subscribe: true
+  link:
+    - name: github
+      url: https://github.com/Jacob953
+    - name: linkedin
+      url: https://www.linkedin.com/in/junfeng-yu-578456248/
 
 menu:
   main:
-    - identifier: garden
-      name: garden
+    - name: Garden
+      url: /
       weight: 1
-    - essays:
-      name: essays
-      url: "/essays"
-      parent: garden
+      post: caret-down
+    - name: Essays
+      url: /essays
+      parent: Garden
       weight: 1
-    - notes:
-      name: notes
+    - name: Notes
       url: /notes
-      parent: garden
+      parent: Garden
       weight: 2
-    - lanes:
-      name: lanes
+    - name: Lanes
       url: /lanes
-      parent: garden
+      parent: Garden
       weight: 3
-    - library:
-      name: library
+    - name: Library
       url: /library
-      parent: garden
+      parent: Garden
       weight: 4
-    - cassette:
-      name: cassette
+    - name: Cassette
       url: /cassette
       weight: 2
-    - about:
-      name: about
-      url: /about
+    - name: Wiki
+      url: https://github.com/Jacob953/hugo-three4th/wiki
       weight: 3
+      post: link
 
+enableGitInfo: true
+lastmod: ["lastmod", ":fileModTime", ":default"]

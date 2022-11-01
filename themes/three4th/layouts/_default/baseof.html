@@ -3,12 +3,13 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div id="content">
+        <div>
         {{- block "main" . }}{{- end }}
+        {{- if not .IsHome }}{{- partial "scroll.html"}} {{- end }}
         </div>
         <footer>
-        {{- partial "footer.html" . -}}
+        {{- partial "footer.html" . }}
         </footer>
-        {{- partial "json.html"}}
+        {{- partial "json.html" . }}
     </body>
 </html>

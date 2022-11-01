@@ -1,5 +1,36 @@
 {{ define "main" }}
-<div id="home-jumbotron" class="jumbotron text-center">
-  <h1 class="title">{{ .Site.Title }}</h1>
+<div class="summary">
+
+  <div id="site-author">
+    <span><strong>{{ .Site.Author.name }}</strong></span> 
+    <span>{{ .Site.Author.intro }}</span>
+    <div class="descrip">
+      <p>{{ .Site.Author.role }}</p>
+    </div>
+  </div>
+
+	<div id="site-sitemaps">
+    {{ range .Pages }}
+    {{ if or (eq .Params.disaplay "card") (eq .Params.disaplay "entry") }}
+    {{ if .Params.def }}
+    <div class="site-sitemap">
+      <div class="subheader">{{ .Title }}</div>
+      <p>{{ .Params.def }}</p>
+      {{ $disaplay := .Params.disaplay }}
+      <div class="summary-flex">
+          {{ range first 6 .Pages.ByLastmod }}
+          {{ if eq $disaplay "card" }}
+          {{ .Render "card" }}
+          {{ else }}
+          {{ .Render "entry" }}
+          {{ end }}
+          {{ end }}
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+    {{end}}
+	</div>
+
 </div>
 {{ end }}
