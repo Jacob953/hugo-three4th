@@ -1,0 +1,31 @@
+{{/*
+
+*/}}
+
+{{- define "main" }}
+<div class="p-home">
+  {{/*  check all sections and do not show timeline style  */}}
+  {{- range .Pages }}
+  {{- $display := .Params.display -}}
+  {{- if ne $display "blog" }}
+  <div class="e-homepage-section">
+
+    {{/*  section preface  */}}
+    <div class="common-preface e-homepage-preface">
+      <h2 class="header-common header-2">{{ .Title }}<br>
+      <span class="header-sub">{{ .Params.preface }}</span>
+      </h2>
+    </div>
+
+    {{/*  section sequences  */}}
+    {{ $sequences := where .Pages ".Params.display" $display }}
+    <div class="s-grid-common">
+      {{- range first 6 $sequences.ByWeight }}
+      {{- partial "utils/render" (dict "context" . "display" $display) -}}
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+  {{- end }}
+</div>
+{{- end }}

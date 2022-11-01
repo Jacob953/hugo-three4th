@@ -1,0 +1,19 @@
+{{- define "main" }}
+{{ $display := .Params.display }}
+<div class="p-section">
+    <span>{{ .Content }}</span>
+    {{- if eq $display "blog" }}
+    <div class="s-grid-flex">    
+        {{- range .Pages.ByWeight }}
+        {{- partial "utils/render" (dict "context" . "display" $display) -}}
+        {{ end -}}
+    </div>
+    {{- else }}
+    <div class="s-grid-common">    
+        {{- range .Pages.ByWeight }}
+        {{- partial "utils/render" (dict "context" . "display" $display) -}}
+        {{ end -}}
+    </div>
+</div>
+{{- end }}
+{{- end }}

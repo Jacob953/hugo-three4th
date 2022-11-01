@@ -1,0 +1,11 @@
+{{- $url := .Params.externalurl -}}
+{{- if not $url }}
+    {{- $url = printf "%s404.html" .Permalink -}}
+{{- end }}
+<a class="common-link s-section-item s-section-book" href="{{ $url }}">
+    <img class="common-img e-section-cover" src="{{ .Permalink }}images/{{ .Params.cover }}" />
+    <h3 class="header-common header-3 e-section-header">
+        {{ .Title }}<br>
+        {{ with .Params.author }}<span class="header-common header-sub">{{ . }}</span>{{ end }}
+    </h3>
+</a>

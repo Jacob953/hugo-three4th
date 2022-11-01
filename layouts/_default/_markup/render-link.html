@@ -1,0 +1,5 @@
+<a {{- with .Title}} title="{{ . }}" {{ end -}}
+   {{- with strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener" {{ end -}}
+   class="common-link" href="{{ .Destination | safeURL }}">
+    {{ .Text | safeHTML }}
+</a>

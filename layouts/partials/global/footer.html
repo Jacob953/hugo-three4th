@@ -1,0 +1,41 @@
+{{- $subscribe := .Site.Params.subscribe -}}
+{{- $extLinks := .Site.Params.extLink -}}
+<!-- If has follower -->
+{{- if or $subscribe $extLinks }}
+<div class="footer-item">
+    {{- with $subscribe }}
+    <div class="footer-item" id="c-site-subscribe">    
+        <span>Want to follow&nbsp;{{- site.Author.name -}}'s digital garden?</span>
+        <br>
+        <a type="application/rss+xml" href="/index.xml">
+            <button id="btn-subscribe"><i class="fa fa-rss">&nbsp;</i>Subscribe via RSS Feed</button>
+        </a>
+    </div>
+    {{- end }}
+    
+    {{- with $extLinks }}
+    <div class="footer-item" id="c-social-links">
+        {{- range . }}
+        <a class="link-common" href="{{ .url }}">
+            <i class="fa fa-{{ .name }}" aria-hidden="true"></i>
+        </a>
+        {{- end }}
+    </div>
+    {{- end }}
+</div>
+{{- end }}
+
+{{- with .Site.Menus.main }}
+<div class="footer-item" id="e-footer-sitemap">
+    {{- range .  }}
+    <div class="c-sitemap-item">
+    <a class="link-common" href="{{ .URL }}">{{- .Name -}}</a>
+    </div>
+    {{- range .Children }}
+    <div class="c-sitemap-item">
+    <a class="link-common" href="{{ .URL }}">{{- .Name -}}</a>
+    </div>
+    {{- end }}
+    {{- end }}
+</div>
+{{- end }}

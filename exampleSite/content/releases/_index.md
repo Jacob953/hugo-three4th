@@ -1,15 +1,18 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-display: entry
+title: "Releases"
+display: blog
 preface: Please write your defination here.
 ---
+
+Please write your foreward here.
+
 <!----------------------ATTENTION----------------------------
 
-display: entry, cover, book, timeline.
+display: entry, card, book, timeline.
 
 Please follow the specific kind of archetypes in the case of display below:
 
-    case: entry, cover, timeline
+    case: entry, card, timeline
         
         `hugo new --kind post <dir>/<title>`
         eg: hugo new --kind post essays/database
@@ -21,4 +24,3 @@ Please follow the specific kind of archetypes in the case of display below:
 
 ------------------------------------------------------------> 
 
-Please write your foreward here.

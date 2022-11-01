@@ -1,0 +1,53 @@
+baseURL = 'https://example.org/'
+copyright = "This site is licensed under the MIT License."
+languageCode = "en-us"
+title = "Three4Th"
+theme = "hugo-three4th"
+
+[author]
+  name = "Three4Th"
+  email = "i@jacob953.com"
+  intro = "keeps track"
+  role = "A digital graden"
+
+[params] 
+  subscribe = true
+  [[params.extLink]]
+    name = "github"
+    url = "https://github.com/Jacob953/hugo-three4th"
+
+[menu]
+  [[menu.main]]
+    name = "Garden"
+    url = "/"
+    weight = 1
+    post = "caret-down"
+  [[menu.main]]
+    name = "Species"
+    url = "/species"
+    parent = "Garden"
+    weight = 1
+  [[menu.main]]
+    name = "Note"
+    url = "/note"
+    parent = "Garden"
+    weight = 2
+  [[menu.main]]
+    name = "Gardener"
+    url = "/gardener"
+    parent = "Garden"
+    weight = 3
+  [[menu.main]]
+    name = "Releases"
+    url = "/releases"
+    weight = 2
+  [[menu.main]]
+    name = "Wiki"
+    url = "https://github.com/Jacob953/hugo-three4th/wiki"
+    weight = 3
+    post = "link"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.93.0"

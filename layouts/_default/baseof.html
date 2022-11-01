@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- head -->
+    {{- partial "global/head.html" . -}}
+    </head>
+    <body>
+        <!-- navigation -->
+        <nav id="site-nav">
+        {{- partial "global/navigation" . -}}
+        </nav>
+        
+        <!-- header -->
+        <header>
+        {{- partial "global/header" . -}}
+        </header>
+
+        <!-- main -->
+        <main>
+        {{- block "main" . }}{{ end -}}
+        </main>
+
+        <!-- footer -->
+        <footer id="c-site-footer">
+        {{- partial "global/footer.html" . -}}
+        </footer>
+
+        <!-- script -->
+        {{- partial "global/script.html" . -}}
+    </body>
+</html>
