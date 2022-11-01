@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cassette on JACO GARDEN</title>
+    <link>http://example.org/cassette/</link>
+    <description>Recent content in Cassette on JACO GARDEN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>i@jacob953.com (Jacob953)</managingEditor>
+    <webMaster>i@jacob953.com (Jacob953)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0  International License.</copyright><atom:link href="http://example.org/cassette/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Date3</title>
+      <link>http://example.org/cassette/date3/</link>
+      <pubDate>Fri, 11 Nov 2022 00:09:43 +0800</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>http://example.org/cassette/date3/</guid>
+      <description>Please start your post here!</description>
+    </item>
+    
+    <item>
+      <title>Date2</title>
+      <link>http://example.org/cassette/date2/</link>
+      <pubDate>Fri, 11 Nov 2022 00:09:42 +0800</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>http://example.org/cassette/date2/</guid>
+      <description>Please start your post here!</description>
+    </item>
+    
+    <item>
+      <title>Date1</title>
+      <link>http://example.org/cassette/date1/</link>
+      <pubDate>Fri, 11 Nov 2022 00:09:40 +0800</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>http://example.org/cassette/date1/</guid>
+      <description>Please start your post here!</description>
+    </item>
+    
+  </channel>
+</rss>

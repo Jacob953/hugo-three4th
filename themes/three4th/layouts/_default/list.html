@@ -1,12 +1,20 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ range .Pages.ByPublishDate.Reverse }}
-<p>
-    <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    {{ partial "metadata.html" . }}
-    <a class="summary" href="{{ .RelPermalink }}">
-        <p>{{ .Summary }}</p>
-    </a>
-</p>
-{{ end }}
+<div class="summary">
+    <h1>{{- .Title }}</h1>
+    <div class="descrip">{{- .Content }}</div>
+    {{ $disaplay := .Params.disaplay }}
+    {{ if eq $disaplay "timeline" }}
+    <div class="summary-line">
+        {{/*  {{ range first 5 .Pages.ByLastmod }}  */}}
+        {{ range .Pages.ByLastmod }}
+        {{ partial "sticky" . }}
+        {{ end }}
+    </div>
+    {{/*  {{ if gt (len .Pages) 5 }}
+    <button>Older</button>
+    {{ end }}  */}}
+    {{ else }}
+    {{- block "summary-flex" . }}{{- end }}
+    {{ end }}
+</div>
 {{ end }}

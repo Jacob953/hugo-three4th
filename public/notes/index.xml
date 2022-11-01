@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on JACO GARDEN</title>
+    <link>http://example.org/notes/</link>
+    <description>Recent content in Notes on JACO GARDEN</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>i@jacob953.com (Jacob953)</managingEditor>
+    <webMaster>i@jacob953.com (Jacob953)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0  International License.</copyright><atom:link href="http://example.org/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Note1</title>
+      <link>http://example.org/notes/note1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>http://example.org/notes/note1/</guid>
+      <description>Please start your post here!</description>
+    </item>
+    
+    <item>
+      <title>Note2</title>
+      <link>http://example.org/notes/note2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>http://example.org/notes/note2/</guid>
+      <description>Please start your post here!</description>
+    </item>
+    
+    <item>
+      <title>Note3</title>
+      <link>http://example.org/notes/note3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>http://example.org/notes/note3/</guid>
+      <description>Please start your post here!</description>
+    </item>
+    
+    <item>
+      <title>Note4</title>
+      <link>http://example.org/notes/note4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>http://example.org/notes/note4/</guid>
+      <description>Please start your post here!</description>
+    </item>
+    
+    <item>
+      <title>Note5</title>
+      <link>http://example.org/notes/note5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>http://example.org/notes/note5/</guid>
+      <description>Please start your post here!</description>
+    </item>
+    
+    <item>
+      <title>Note6</title>
+      <link>http://example.org/notes/note6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>http://example.org/notes/note6/</guid>
+      <description>Please start your post here!</description>
+    </item>
+    
+    <item>
+      <title>Note7</title>
+      <link>http://example.org/notes/note7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>http://example.org/notes/note7/</guid>
+      <description>Please start your post here!</description>
+    </item>
+    
+    <item>
+      <title>Note8</title>
+      <link>http://example.org/notes/note8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>i@jacob953.com (Jacob953)</author>
+      <guid>http://example.org/notes/note8/</guid>
+      <description>Please start your post here!</description>
+    </item>
+    
+  </channel>
+</rss>
