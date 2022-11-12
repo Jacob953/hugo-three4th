@@ -1,7 +1,7 @@
 <div id="footer-subscribe" class="footer-item">
     {{- with .Site.Params.subscribe }}
     <p>Want to follow&nbsp;{{- site.Author.name }}'s digital garden?</p>
-    <a type="application/rss+xml" href="{{ site.BaseURL }}/index.xml">
+    <a type="application/rss+xml" href="/index.xml">
     <button id="subscribe-btn"><i class="fa fa-rss"></i>Subscribe via RSS Feed</button>
     </a>
     {{- end }}
