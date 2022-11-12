@@ -1,0 +1,9 @@
+name = "hugo-three4th"
+license = "Apache License 2.0"
+description = "A digital garden theme for hugo"
+disaplay = ["entry", "card", "book", "timeline"]
+status = ["sprout", "bloom", "mature"]
+
+[author]
+  name = "Jacob953"
+  email = "i@jacob953.com"

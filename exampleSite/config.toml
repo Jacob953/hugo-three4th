@@ -10,8 +10,6 @@ theme = "hugo-three4th"
   role = "Day-dreamer, open-source ethusastic and currently working at Huawei"
   intro = "makes funny things"
 
-
-
 [params] 
   subscribe = true
   [[params.link]]
