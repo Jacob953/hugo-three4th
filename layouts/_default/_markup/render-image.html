@@ -1,9 +1,4 @@
-{{ with resources.GetMatch .Text }}
-{{ $image := .Resize "800x" }}
-<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
-{{ end }}
-{{ with resources.GetRemote (.Destination | safeURL) }}
-{{ $image := .Resize "800x" }}
-<img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
-{{ end }}
-{{ with .Title}}<div class="image-title">{{ . }}</div>{{ end }}
+<div class="image-title">
+    <img src="{{ .Destination }}" width="600px" />
+</div>
+<div class="image-title">{{ .Title }}</div>
