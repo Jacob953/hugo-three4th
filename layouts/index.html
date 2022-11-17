@@ -11,7 +11,7 @@
 
 	<div id="site-sitemaps">
     {{ range .Pages }}
-    {{ if or (eq .Params.disaplay "card") (eq .Params.disaplay "entry") }}
+    {{ if or (eq .Params.disaplay "section-card") (eq .Params.disaplay "section-entry") }}
     {{ if .Params.def }}
     <div class="site-sitemap">
       <div class="subheader">{{ .Title }}</div>
@@ -19,10 +19,10 @@
       {{ $disaplay := .Params.disaplay }}
       <div class="summary-flex">
           {{ range first 6 .Pages.ByLastmod }}
-          {{ if eq $disaplay "card" }}
-          {{ .Render "card" }}
+          {{ if eq $disaplay "section-card" }}
+          {{ .Render "section-card" }}
           {{ else }}
-          {{ .Render "entry" }}
+          {{ .Render "section-entry" }}
           {{ end }}
           {{ end }}
       </div>

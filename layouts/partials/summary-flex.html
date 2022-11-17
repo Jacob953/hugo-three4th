@@ -2,10 +2,10 @@
 {{ $disaplay := .Params.disaplay }}
 <div class="summary-flex">
     {{ range .Pages.ByLastmod }}
-    {{ if eq $disaplay "card" }}
-    {{ .Render "card" }}
-    {{ else if eq $disaplay "entry" }}
-    {{ .Render "entry" }}
+    {{ if eq $disaplay "section-card" }}
+    {{ .Render "section-card" }}
+    {{ else if eq $disaplay "section-entry" }}
+    {{ .Render "section-entry" }}
     {{ end }}
     {{ end }}
 </div>
