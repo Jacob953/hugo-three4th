@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
+    <head>
     {{- partial "head.html" . -}}
+    </head>
     <body>
-        {{- partial "header.html" . -}}
+        <!-- navigation -->
+        <nav class="navigation">
+        {{- partial "navigation" .}}
+        </nav>
+
         <div>
         {{- block "main" . }}{{- end }}
         {{- if not .IsHome }}{{- partial "scroll.html"}} {{- end }}

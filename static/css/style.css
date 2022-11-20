@@ -1,4 +1,4 @@
-/* Global */
+/* 
 p {
     align-self: flex-start;
     font-size: 26px;
@@ -12,11 +12,11 @@ a {
 
 body {
     font-size: 18px;
-    font-family: 'ZCOOL XiaoWei', serif;
+    font-family: 'SmileySans-Oblique';
 }
 
 .descrip {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'SmileySans-Oblique';
     margin-top: 60px;
     margin-bottom: 180px;
 }
@@ -88,7 +88,6 @@ h3, .descrip p, .section-header  {
     }
 }
 
-/* Summary-Line */
 .sticky {
     border-left: 1px dashed;
     margin: 80px -10px;
@@ -117,8 +116,7 @@ h3, .descrip p, .section-header  {
     margin: 45px 0;
 }
 
-/* TopNav */
-#top-bar {
+#navigation {
     overflow: hidden;
     height: 60px;
     align-items: center;
@@ -165,7 +163,6 @@ h3, .descrip p, .section-header  {
 }
 
 
-/* SideNav */
 #side-bar {
     top: 80px;
     position: fixed;
@@ -181,7 +178,6 @@ h3, .descrip p, .section-header  {
     padding-top: 20px;
 }
 
-/* Content */
 .summary-flex {
     display: flex;
     flex-flow: row wrap;
@@ -214,14 +210,12 @@ h3, .descrip p, .section-header  {
     transform: scale3d(1.02, 1.02, 1.02);
 }
 
-/* Scroll */
 #scroll-btn {
     position: fixed;
     bottom: 5px;
     left: 5px;
 }
 
-/* Footer */
 footer {
     background-color:whitesmoke;
     margin-top: 300px;
@@ -269,8 +263,11 @@ footer {
     text-decoration: underline;
 }
 
+
 #footer-sitemap {
+    margin: auto;
     display: grid;
+    max-width: 500px;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-}
+} */
