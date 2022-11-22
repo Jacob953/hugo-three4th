@@ -1,11 +1,11 @@
 baseURL = 'https://example.org/'
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0  International License."
 languageCode = "en-us"
-title = "JACO GARDEN"
+title = "Three4Th"
 theme = "hugo-three4th"
 
 [author]
-  name = "Jacob953"
+  name = "Three4Th"
   email = "i@jacob953.com"
   role = "Day-dreamer, open-source ethusastic and currently working at Huawei"
   intro = "makes funny things"
@@ -14,10 +14,7 @@ theme = "hugo-three4th"
   subscribe = true
   [[params.link]]
     name = "github"
-    url = "https =//github.com/Jacob953"
-  [[params.link]]
-    name = "linkedin"
-    url = "https =//www.linkedin.com/in/junfeng-yu-578456248/"
+    url = "https://github.com/Jacob953/hugo-three4th"
 
 [menu]
   [[menu.main]]
@@ -31,26 +28,21 @@ theme = "hugo-three4th"
     parent = "Garden"
     weight = 1
   [[menu.main]]
-    name = "Notes"
-    url = "/notes"
-    parent = "Garden"
-    weight = 2
-  [[menu.main]]
     name = "Lanes"
     url = "/lanes"
     parent = "Garden"
-    weight = "3"
+    weight = 2
   [[menu.main]]
     name = "Library"
     url = "/library"
     parent = "Garden"
-    weight = 4
+    weight = 3
   [[menu.main]]
-    name = "Cassette"
+    name = "Releases"
     url = "/cassette"
     weight = 2
   [[menu.main]]
     name = "Wiki"
-    url = "https =//github.com/Jacob953/hugo-three4th/wiki"
+    url = "https://github.com/Jacob953/hugo-three4th/wiki"
     weight = 3
     post = "link"
