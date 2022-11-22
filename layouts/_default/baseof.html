@@ -3,31 +3,30 @@
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- head -->
-    {{- partial "head.html" . -}}
+    {{- partial "global/head.html" . -}}
     </head>
     <body>
         <!-- navigation -->
-        <nav class="navigation">
-        {{- partial "navigation" . -}}
+        <nav id="site-nav">
+        {{- partial "global/navigation" . -}}
         </nav>
         
         <!-- header -->
         <header>
-        {{- partial "header" . -}}
+        {{- partial "global/header" . -}}
         </header>
 
         <!-- main -->
         <main>
         {{- block "main" . }}{{ end -}}
-        {{- if not .IsHome }}{{ partial "scroll.html" }} {{ end -}}
         </main>
 
         <!-- footer -->
         <footer>
-        {{- partial "footer.html" . -}}
+        {{- partial "global/footer.html" . -}}
         </footer>
 
         <!-- script -->
-        {{- partial "script.html" . -}}
+        {{- partial "global/script.html" . -}}
     </body>
 </html>

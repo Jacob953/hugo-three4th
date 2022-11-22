@@ -1,0 +1,22 @@
+<!-- site title -->
+<span id="site-title" href="/" aria-haspopup="true" aria-expanded="false" tabindex="0">{{- .Site.Title -}}</span>
+
+<!-- sitemaps -->
+{{- with .Site.Menus }}
+<div id="nav-list">
+	{{- range .main }}
+	{{- $sitemap_name := .Name }}
+	<span class="nav-item">
+		<a class="common-link nav-link" href="{{- .URL -}}">{{- $sitemap_name -}}
+		{{- if not .HasChildren }}
+		{{- with .Post }} <i class="fa fa-{{ . }}"></i> {{ end -}}</a>
+		{{ else }}</a>
+		{{- with .Post }}<span class="common-drop" onclick="{{ printf "drop(%s)" ($sitemap_name | lower) | safeJS }}"><i class="fa fa-{{ . }}"></i></span>{{ end -}}
+		<div class="nav-droplist" id="drop-{{ $sitemap_name | lower }}">
+		{{- range .Children }} <a class="common-link nav-link nav-dropitem" href="{{ .URL }}">{{ .Name }}</a>{{ end -}}
+		</div>
+	{{- end }}
+	</span>
+	{{- end }}
+</div>
+{{- end }}

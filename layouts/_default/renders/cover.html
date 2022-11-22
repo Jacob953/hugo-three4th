@@ -1,0 +1,8 @@
+<a class="summary-card summary-item" href="{{ .Permalink }}">
+    <div class="common-cover">
+    {{ $cover := .Params.cover }}
+        <img src="{{ .Permalink }}images/{{ .Params.cover }}" />
+    </div>
+    <div class="common-title">{{ .Title }}</div>
+    <div class="common-status">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+</a>

@@ -1,0 +1,6 @@
+
+<div class="common-section sticky">
+    <h3 >{{- partial "utils/metadata.html" . }}</h3>
+    {{- with .Title }}<h6 class="common-header">{{ . }}</h6>{{ end -}}
+    {{ .Content }}
+</div>

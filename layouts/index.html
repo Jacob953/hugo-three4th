@@ -1,36 +1,26 @@
-{{ define "main" }}
-<div class="summary">
-
-  <div id="site-author">
-    <span><strong>{{ .Site.Author.name }}</strong></span> 
-    <span>{{ .Site.Author.intro }}</span>
-    <div class="descrip">
-      <p>{{ .Site.Author.role }}</p>
+{{- define "main" }}
+<div class="p-homepage">
+  {{- range .Pages }}
+  {{- $disaplay := .Params.disaplay }}
+  <!-- $disaplay != timeline -->
+  {{- if ne $disaplay "timeline" }}
+  <div class="p-homepage-section">
+    <!-- section header -->
+    <div class="common-header p-homepage-section-header">
+      <h2>{{ .Title }}</h2>
+      <span>{{ .Params.def }}</span>
+    </div>
+    <!-- section preface -->
+    <div class="p-homepage-section-preface">
+    {{- range first 6 .Pages }}
+    {{- if eq $disaplay "book" }}{{ .Render "renders/book" }}
+    {{- else if eq $disaplay "entry" }}{{ .Render "renders/entry" }}
+    {{- else if eq $disaplay "cover" }}{{ .Render "renders/cover" }}
+    {{- end }}
+    {{- end }}
     </div>
   </div>
-
-	<div id="site-sitemaps">
-    {{ range .Pages }}
-    {{ if or (eq .Params.disaplay "section-card") (eq .Params.disaplay "section-entry") }}
-    {{ if .Params.def }}
-    <div class="site-sitemap">
-      <div class="subheader">{{ .Title }}</div>
-      <p>{{ .Params.def }}</p>
-      {{ $disaplay := .Params.disaplay }}
-      <div class="summary-flex">
-          {{ range first 6 .Pages.ByLastmod }}
-          {{ if eq $disaplay "section-card" }}
-          {{ .Render "section-card" }}
-          {{ else }}
-          {{ .Render "section-entry" }}
-          {{ end }}
-          {{ end }}
-      </div>
-    </div>
-    {{ end }}
-    {{ end }}
-    {{end}}
-	</div>
-
+  {{- end }}
+  {{- end }}
 </div>
-{{ end }}
+{{- end }}

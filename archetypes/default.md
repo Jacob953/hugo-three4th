@@ -8,11 +8,11 @@ Please write your foreward here.
 
 <!----------------------ATTENTION----------------------------
 
-disaplay: entry, card, book, timeline.
+disaplay: entry, cover, book, timeline.
 
 Please follow the specific kind of archetypes in the case of disaplay below:
 
-    case: entry, card, timeline
+    case: entry, cover, timeline
         
         `hugo new --kind post <dir>/<title>`
         eg: hugo new --kind post essays/database

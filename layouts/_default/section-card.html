@@ -1,8 +1,0 @@
-<a href="{{ .Permalink }}" class="summary-card summary-item">
-    <div class="post-cover">
-    {{ $cover := .Params.cover }}
-        <img src="{{ .Permalink }}images/{{ .Params.cover }}" />
-    </div>
-    <div class="post-title">{{ .Title }}</div>
-    <div class="post-status">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-</a>

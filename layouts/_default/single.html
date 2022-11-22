@@ -1,6 +1,5 @@
 {{- define "main" }}
-<h1>{{ .Title }}</h1>
-{{/*  {{- partial "metadata.html" . }}  */}}
-<br><br>
-{{- partial "post.html" . }}
+<div class="p-single">
+{{ .Content }}
+</div>
 {{- end }}

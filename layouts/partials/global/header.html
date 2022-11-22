@@ -1,0 +1,12 @@
+{{- $kind := .Kind -}}
+{{- if eq $kind "home"}}
+<h1 class="common-header e-homepage-header">
+    <span>{{- .Title -}}</span>
+    <span>{{- .Site.Author.intro -}}</span>
+    <span>{{- .Site.Author.role -}}</span>
+</h1>
+{{- else if eq $kind "section"}}
+<h1 class="common-header e-section-header">{{- .Title -}}</h1>
+{{- else if eq $kind "page"}}
+<h1 class="common-header e-page-header">{{- .Title -}}</h1>
+{{- end }}

@@ -1,7 +1,11 @@
-.navigation {
+#site-nav {
     display: flex;
     flex-direction: row;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    padding: 20px;
+}
+
+#site-nav #nav-list {
+    display: flex;
+    flex-direction: row;
 }

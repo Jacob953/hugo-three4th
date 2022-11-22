@@ -1,20 +1,18 @@
-{{ define "main" }}
-<div class="summary">
-    <h1>{{- .Title }}</h1>
-    <div class="descrip">{{- .Content }}</div>
-    {{ $disaplay := .Params.disaplay }}
-    {{ if eq $disaplay "timeline" }}
-    <div class="summary-line">
-        {{/*  {{ range first 5 .Pages.ByLastmod }}  */}}
-        {{ range .Pages.ByLastmod }}
-        {{ partial "sticky" . }}
-        {{ end }}
-    </div>
-    {{/*  {{ if gt (len .Pages) 5 }}
-    <button>Older</button>
-    {{ end }}  */}}
-    {{ else }}
-    {{- block "summary-flex" . }}{{- end }}
-    {{ end }}
+{{- define "main" }}
+{{ $disaplay := .Params.disaplay }}
+<div class="p-list">
+    <!-- timeline -->
+    {{- if eq $disaplay "timeline" }}
+    {{- range .Pages.ByLastmod }}{{ .Render "renders/timeline" }}{{ end -}}
+    <!-- entry -->
+    {{- else if eq $disaplay "entry"}}
+    {{- range .Pages.ByLastmod }}{{ .Render "renders/entry" }}{{ end -}}
+    <!-- cover -->
+    {{- else if eq $disaplay "cover"}}
+    {{- range .Pages.ByLastmod }}{{ .Render "renders/cover" }}{{ end -}}
+    <!-- book -->
+    {{- else if eq $disaplay "book"}}
+    {{- range .Pages.ByLastmod }}{{ .Render "renders/book" }}{{ end -}}
+    {{- end }}
 </div>
-{{ end }}
+{{- end }}
