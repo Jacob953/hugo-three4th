@@ -1,4 +1,4 @@
 <div class="image-title">
     <img src="{{ .Destination }}" width="600px" />
 </div>
-<div class="image-title">{{ .Title }}</div>
+{{- with .Title }} <div class="image-title">{{ . }}</div> {{ end -}}
