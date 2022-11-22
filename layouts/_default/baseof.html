@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- head -->
     {{- partial "head.html" . -}}
     </head>
     <body>
         <!-- navigation -->
         <nav class="navigation">
-        {{- partial "navigation" .}}
+        {{- partial "navigation" . -}}
         </nav>
+        
+        <!-- header -->
+        <header>
+        {{- partial "header" . -}}
+        </header>
 
-        <div>
-        {{- block "main" . }}{{- end }}
-        {{- if not .IsHome }}{{- partial "scroll.html"}} {{- end }}
-        </div>
+        <!-- main -->
+        <main>
+        {{- block "main" . }}{{ end -}}
+        {{- if not .IsHome }}{{ partial "scroll.html" }} {{ end -}}
+        </main>
+
+        <!-- footer -->
         <footer>
-        {{- partial "footer.html" . }}
+        {{- partial "footer.html" . -}}
         </footer>
-        {{- partial "json.html" . }}
+
+        <!-- script -->
+        {{- partial "script.html" . -}}
     </body>
 </html>
