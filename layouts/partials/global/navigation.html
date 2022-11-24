@@ -11,7 +11,7 @@
 		{{- if not .HasChildren }}
 		{{- with .Post }} <i class="fa fa-{{ . }}"></i> {{ end -}}</a>
 		{{ else }}</a>
-		{{- with .Post }}<span class="common-drop" onclick="{{ printf "drop(%s)" ($sitemap_name | lower) | safeJS }}"><i class="fa fa-{{ . }}"></i></span>{{ end -}}
+		{{- with .Post }}<span class="common-drop" onclick="{{ printf "drop('%s')" ($sitemap_name | lower) | safeJS }}"><i class="fa fa-{{ . }}"></i></span>{{ end -}}
 		<div class="nav-droplist" id="drop-{{ $sitemap_name | lower }}">
 		{{- range .Children }} <a class="common-link nav-link nav-dropitem" href="{{ .URL }}">{{ .Name }}</a>{{ end -}}
 		</div>

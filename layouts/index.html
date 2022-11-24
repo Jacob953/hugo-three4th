@@ -1,17 +1,21 @@
+<!-- Home Page -->
+
 {{- define "main" }}
-<div class="p-homepage">
+<div class="p-home">
+  <!-- check all sections and do not show timeline style -->
   {{- range .Pages }}
   {{- $disaplay := .Params.disaplay }}
-  <!-- $disaplay != timeline -->
   {{- if ne $disaplay "timeline" }}
-  <div class="p-homepage-section">
+  <div class="p-home-section">
+
     <!-- section header -->
-    <div class="common-header p-homepage-section-header">
+    <div class="common-header p-home-section-header">
       <h2>{{ .Title }}</h2>
       <span>{{ .Params.def }}</span>
     </div>
+
     <!-- section preface -->
-    <div class="p-homepage-section-preface">
+    <div class="p-home-section-preface">
     {{- range first 6 .Pages }}
     {{- if eq $disaplay "book" }}{{ .Render "renders/book" }}
     {{- else if eq $disaplay "entry" }}{{ .Render "renders/entry" }}
