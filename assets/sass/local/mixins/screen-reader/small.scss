@@ -1,5 +1,12 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    $p-font-size: 20px;
+    @include typography-header(p-font-size);
+
+    h1 {
+        font-size: 500px;
+    }
+
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
     .col-s-3 {width: 25%;}

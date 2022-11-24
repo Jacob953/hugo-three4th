@@ -1,11 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 disaplay: entry
-def: Please write your defination here.
+preface: Please write your defination here.
 ---
-
-Please write your foreward here.
-
 <!----------------------ATTENTION----------------------------
 
 disaplay: entry, cover, book, timeline.
@@ -24,3 +21,4 @@ Please follow the specific kind of archetypes in the case of disaplay below:
 
 ------------------------------------------------------------> 
 
+Please write your foreward here.

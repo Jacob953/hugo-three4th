@@ -1,5 +1,12 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    $p-font-size: 20px;
+    @include typography-header(p-font-size);
+
+    h1 {
+        font-size: 500px;
+    }
+
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
