@@ -7,8 +7,6 @@ theme = "hugo-three4th"
 [author]
   name = "Three4Th"
   email = "i@jacob953.com"
-  role = "Day-dreamer, open-source ethusastic and currently working at Huawei"
-  intro = "makes funny things"
 
 [params] 
   subscribe = true
