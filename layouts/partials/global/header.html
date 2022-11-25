@@ -1,12 +1,18 @@
 {{- $kind := .Kind -}}
 {{- if eq $kind "home"}}
-<h1 class="common-header e-homepage-header">
-    <span>{{- .Title -}}</span>
-    <span>{{- .Site.Author.intro -}}</span>
-    <span>{{- .Site.Author.role -}}</span>
+<h1 class="header-common header-1 e-homepage-header">
+    {{- .Title -}}&nbsp;
+    <span>{{- .Site.Author.intro -}}</span><br>
+    <span class="header-sub">{{- .Site.Author.role -}}</span>
 </h1>
 {{- else if eq $kind "section"}}
-<h1 class="common-header e-section-header">{{- .Title -}}</h1>
+<h1 class="header-common header-1 e-section-header">
+    {{- .Title -}}<br>
+    <span class="header-sub">{{ .Params.preface }}</span>
+</h1>
 {{- else if eq $kind "page"}}
-<h1 class="common-header e-page-header">{{- .Title -}}</h1>
+<h2 class="header-common header-2 e-page-header">
+    {{- .Title -}}<br>
+    <span class="header-sub">{{ .Params.preface }}</span>
+</h2>
 {{- end }}

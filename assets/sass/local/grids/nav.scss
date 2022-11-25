@@ -1,11 +1,7 @@
-#site-nav {
+nav {
     display: flex;
     flex-direction: row;
+    padding: $space-nav-padding;
     -webkit-box-pack: justify;
     justify-content: space-between;
-}
-
-#site-nav #nav-list {
-    display: flex;
-    flex-direction: row;
 }

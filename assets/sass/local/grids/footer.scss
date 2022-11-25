@@ -1,0 +1,7 @@
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 1400px;
+    padding: $space-footer-padding;
+    padding-bottom: $space-footer-padding-bottom;
+}

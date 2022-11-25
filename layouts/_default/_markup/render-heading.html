@@ -1,9 +1,9 @@
 {{- if eq .Level 6 }}
-<h6 class="common-header">
+<h6 class="header-{{ .Level }}">
     {{ .Text | safeHTML }}
 </h6>
 {{- else }}
-<h{{ .Level }} class="common-header">
+<h{{ .Level }} class="header-{{ .Level }}">
     {{ .Text | safeHTML }}
 </h{{ .Level }}>
 {{- end }}

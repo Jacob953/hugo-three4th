@@ -1,21 +1,23 @@
 <!-- site title -->
-<span id="site-title" href="/" aria-haspopup="true" aria-expanded="false" tabindex="0">{{- .Site.Title -}}</span>
+<a id="site-link" href="/" aria-haspopup="true" aria-expanded="false" tabindex="0">{{- .Site.Title -}}</a>
 
 <!-- sitemaps -->
 {{- with .Site.Menus }}
-<div id="nav-list">
+<div id="e-nav-sitemap">
 	{{- range .main }}
 	{{- $sitemap_name := .Name }}
-	<span class="nav-item">
-		<a class="common-link nav-link" href="{{- .URL -}}">{{- $sitemap_name -}}
+	<span class="sitemap-item">
 		{{- if not .HasChildren }}
-		{{- with .Post }} <i class="fa fa-{{ . }}"></i> {{ end -}}</a>
+		<a class="link-common {{- with .Post }} fa fa-{{ . }} sitemap-icon {{ end -}}" href="{{- .URL -}}">{{- $sitemap_name -}}</a>
 		{{ else }}</a>
-		{{- with .Post }}<span class="common-drop" onclick="{{ printf "drop('%s')" ($sitemap_name | lower) | safeJS }}"><i class="fa fa-{{ . }}"></i></span>{{ end -}}
+		<a class="link-common" href="{{- .URL -}}">
+			{{- $sitemap_name -}}
+			{{- with .Post }}<span class="fa fa-{{ . }} sitemap-icon" onclick="{{ printf "drop('%s')" ($sitemap_name | lower) | safeJS }}"></span>{{ end -}}
+		</a>
 		<div class="nav-droplist" id="drop-{{ $sitemap_name | lower }}">
-		{{- range .Children }} <a class="common-link nav-link nav-dropitem" href="{{ .URL }}">{{ .Name }}</a>{{ end -}}
+			{{- range .Children }} <a class="link-common" href="{{ .URL }}">{{ .Name }}</a>{{ end -}}
 		</div>
-	{{- end }}
+		{{- end }}
 	</span>
 	{{- end }}
 </div>

@@ -1,25 +1,37 @@
-<div id="footer-subscribe" class="footer-item">
-    {{- with .Site.Params.subscribe }}
-    <p>Want to follow&nbsp;{{- site.Author.name }}'s digital garden?</p>
-    <a type="application/rss+xml" href="/index.xml">
-    <button id="subscribe-btn"><i class="fa fa-rss"></i>Subscribe via RSS Feed</button>
-    </a>
+{{- $subscribe := .Site.Params.subscribe -}}
+{{- $extLinks := .Site.Params.extLink -}}
+<!-- If has follower -->
+{{- if or $subscribe $extLinks }}
+<div class="footer-item follow">
+    {{- with $subscribe }}
+    <div class="footer-item" id="site-subscribe">    
+        <span>Want to follow&nbsp;{{- site.Author.name -}}'s digital garden?</span>
+        <br>
+        <a type="application/rss+xml" href="/index.xml">
+            <button id="subscribe-btn"><i class="fa fa-rss">Subscribe via RSS Feed</i></button>
+        </a>    
+    </div>
+    {{- end }}
+    
+    {{- with $extLinks }}
+    <div class="footer-item" id="external-links">
+        {{- range . }}
+        <a class="link-common" href="{{ .url }}">
+            <i class="fa fa-{{ .name }}" aria-hidden="true"></i>
+        </a>
+        {{- end }}
+    </div>
     {{- end }}
 </div>
+{{- end }}
 
-<div id="footer-links" class="footer-item">
-    {{- range .Site.Params.link  }}
-    <a class="sitemap-link" href="{{ .url }}">
-        <i class="fa fa-{{ .name }}" aria-hidden="true"></i>
-    </a>
-    {{- end }}
-</div>
-
-<div id="footer-sitemap" class="footer-item">
-    {{- range .Site.Menus.main  }}
-    <a class="sitemap" href="{{ .URL }}">{{- .Name }}</a>
+{{- with .Site.Menus.main }}
+<div class="footer-item" id="e-footer-sitemap">
+    {{- range .  }}
+    <a class="link-common" href="{{ .URL }}">{{- .Name -}}</a>
     {{- range .Children }}
-    <a class="sitemap" href="{{ .URL }}">{{- .Name }}</a>
+    <a class="link-common" href="{{ .URL }}">{{- .Name -}}</a>
     {{- end }}
     {{- end }}
 </div>
+{{- end }}
