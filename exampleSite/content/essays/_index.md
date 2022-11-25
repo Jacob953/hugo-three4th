@@ -1,7 +1,7 @@
 ---
 title: "Essays"
 disaplay: entry
-def: Please write your defination here.
+preface: Please write your defination here.
 ---
 
 Please write your foreward here.

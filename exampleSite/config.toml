@@ -7,10 +7,12 @@ theme = "hugo-three4th"
 [author]
   name = "Three4Th"
   email = "i@jacob953.com"
+  intro = "aaa qkjdhakjsd askjdh akjd hakjs"
+  role = "aaa"
 
 [params] 
   subscribe = true
-  [[params.link]]
+  [[params.extLink]]
     name = "github"
     url = "https://github.com/Jacob953/hugo-three4th"
 

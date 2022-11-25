@@ -1,6 +1,6 @@
 ---
 title: "Lanes"
-disaplay: card
+disaplay: cover
 def: Please write your defination here.
 ---
 
