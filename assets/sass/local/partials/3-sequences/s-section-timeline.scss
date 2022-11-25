@@ -1,0 +1,21 @@
+.s-section-timeline {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px dashed;
+    margin: $space-post-padding;
+    
+    padding: 0 2.6rem;
+}
+
+
+.s-section-timeline::before {
+    content: "";
+    width: 0.7rem;
+    height: 0.7rem;
+    border: 2px solid ;
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -3rem;
+}

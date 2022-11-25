@@ -1,6 +1,9 @@
 
-<div class="common-section sticky">
-    <h3 >{{- partial "utils/metadata.html" . }}</h3>
-    {{- with .Title }}<h6 class="common-header">{{ . }}</h6>{{ end -}}
-    {{ .Content }}
+<div class="s-section-timeline">
+    <h2 class="header-common header-2">{{- partial "utils/metadata.html" . }}</h2>
+    {{- with .Title }}
+    <h3 class="header-common header-3">{{ . }}</h3>{{ end -}}
+    <div class="p-post p-timeline">
+        {{ .Content }}
+    </div>
 </div>

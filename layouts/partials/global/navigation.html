@@ -9,13 +9,13 @@
 	<span class="sitemap-item">
 		{{- if not .HasChildren }}
 		<a class="link-common" href="{{- .URL -}}">
-			{{- with .Post }}<span class="fa fa-{{ . }} sitemap-icon"></span>{{ end -}}
+			{{- with .Post }}<span class="fa fa-{{ . }} common-icon"></span>{{ end -}}
 			{{- $sitemap_name -}}
 		</a>
 		{{ else }}</a>
 		<a class="link-common" href="{{- .URL -}}">
 			{{- $sitemap_name -}}
-			{{- with .Post }}<span class="fa fa-{{ . }} sitemap-icon" onclick="{{ printf "drop('%s')" ($sitemap_name | lower) | safeJS }}"></span>{{ end -}}
+			{{- with .Post }}<span class="fa fa-{{ . }} common-icon" onclick="{{ printf "drop('%s')" ($sitemap_name | lower) | safeJS }}"></span>{{ end -}}
 		</a>
 		<div class="nav-droplist" id="drop-{{ $sitemap_name | lower }}">
 			{{- range .Children }} <a class="link-common" href="{{ .URL }}">{{ .Name }}</a>{{ end -}}

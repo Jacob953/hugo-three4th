@@ -1,12 +1,14 @@
 {{- define "main" }}
 {{ $disaplay := .Params.disaplay }}
-<div class="s-grid-common">
-    <!-- timeline -->
-    {{- if eq $disaplay "timeline" }}
+<!-- timeline -->
+{{- if eq $disaplay "timeline" }}
+<div class="s-grid-flex">    
     {{- range .Pages.ByLastmod }}{{ .Render "renders/timeline" }}{{ end -}}
-    
+</div>
+{{- else }}
+<div class="s-grid-common">    
     <!-- entry -->
-    {{- else if eq $disaplay "entry"}}
+    {{- if eq $disaplay "entry"}}
     {{- range .Pages.ByLastmod }}{{ .Render "renders/entry" }}{{ end -}}
     
     <!-- cover -->
@@ -18,4 +20,5 @@
     {{- range .Pages.ByLastmod }}{{ .Render "renders/book" }}{{ end -}}
     {{- end }}
 </div>
+{{- end }}
 {{- end }}
