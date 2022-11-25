@@ -1,5 +1,5 @@
 ---
-title: "Entry2"
+title: "Entry2 asdalsd"
 status: sprout
 cover: hugo-logo.svg
 ---
