@@ -8,7 +8,10 @@
 	{{- $sitemap_name := .Name }}
 	<span class="sitemap-item">
 		{{- if not .HasChildren }}
-		<a class="link-common {{- with .Post }} fa fa-{{ . }} sitemap-icon {{ end -}}" href="{{- .URL -}}">{{- $sitemap_name -}}</a>
+		<a class="link-common" href="{{- .URL -}}">
+			{{- with .Post }}<span class="fa fa-{{ . }} sitemap-icon"></span>{{ end -}}
+			{{- $sitemap_name -}}
+		</a>
 		{{ else }}</a>
 		<a class="link-common" href="{{- .URL -}}">
 			{{- $sitemap_name -}}

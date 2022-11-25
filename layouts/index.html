@@ -18,7 +18,7 @@
     </div>
 
     {{/*  section sequences  */}}
-    <div class="common-sequences">
+    <div class="s-grid-common">
     {{- range first 6 .Pages }}
     {{- if eq $disaplay "book" }}{{ .Render "renders/book" }}
     {{- else if eq $disaplay "entry" }}{{ .Render "renders/entry" }}

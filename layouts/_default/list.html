@@ -1,6 +1,6 @@
 {{- define "main" }}
 {{ $disaplay := .Params.disaplay }}
-<div class="common-sequences">
+<div class="s-grid-common">
     <!-- timeline -->
     {{- if eq $disaplay "timeline" }}
     {{- range .Pages.ByLastmod }}{{ .Render "renders/timeline" }}{{ end -}}
