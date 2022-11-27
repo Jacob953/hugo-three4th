@@ -1,21 +1,27 @@
 .s-section-timeline {
     display: flex;
     flex-direction: column;
-    border-left: 1px dashed;
-    margin: $space-post-padding;
+    border-left: $font-size-border dashed;
+
+    margin: 0 $margin-post;
+    margin-bottom: $margin-post-bottom;
     
-    padding: 0 2.6rem;
+    padding: 0 $padding-timeline;
 }
 
 
 .s-section-timeline::before {
-    content: "";
-    width: 0.7rem;
-    height: 0.7rem;
-    border: 2px solid ;
-    background-color: white;
-    position: relative;
-    border-radius: 50%;
     display: inline-block;
-    margin-left: -3rem;
+    position: relative;
+    
+    content: "";
+    width: $font-size-timeline-before;
+    height: $font-size-timeline-before;
+
+    border: $font-size-border solid;
+    border-radius: $font-size-timeline-before;
+
+    background-color: white;
+
+    margin-left: $margin-timeline-before;
 }

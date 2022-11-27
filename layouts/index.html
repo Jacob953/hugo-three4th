@@ -3,12 +3,12 @@
 */}}
 
 {{- define "main" }}
-<div class="p-home-main">
+<div class="p-home">
   {{/*  check all sections and do not show timeline style  */}}
   {{- range .Pages }}
   {{- $disaplay := .Params.disaplay -}}
   {{- if ne $disaplay "timeline" }}
-  <div class="common-section e-homepage-section">
+  <div class="e-homepage-section">
 
     {{/*  section preface  */}}
     <div class="common-preface e-homepage-preface">

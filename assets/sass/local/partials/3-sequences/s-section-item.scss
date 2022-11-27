@@ -1,0 +1,15 @@
+.s-section-item {
+    line-height: 100%;
+
+    padding: $padding-section-item-col $padding-section-item-row;
+    margin: $margin-section-item;
+
+    border: $font-size-border solid;
+    border-radius: 0.4rem;
+
+    cursor: pointer;
+}
+
+.s-section-item:hover {
+    transform: scale3d(1.02, 1.02, 1.02);
+}

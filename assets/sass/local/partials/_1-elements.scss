@@ -3,13 +3,15 @@
 @import "1-elements/link-common.scss";
 
 // site
-@import "1-elements/site-link.scss";
+@import "1-elements/site-title.scss";
 @import "1-elements/site-intro.scss";
 @import "1-elements/site-role.scss";
 
 // sitemap
-@import "1-elements/sitemap-icon.scss";
+@import "1-elements/icon-common.scss";
 
+// header
 @import "1-elements/header-sub.scss";
 
+// btn
 @import "1-elements/btn-subscribe.scss";

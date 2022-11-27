@@ -1,8 +1,8 @@
 {{- $kind := .Kind -}}
 {{- if eq $kind "home"}}
 <h1 class="header-common header-1 e-homepage-header">
-    {{- .Title -}}&nbsp;
-    <span>{{- .Site.Author.intro -}}</span><br>
+    {{- .Title -}}
+    <span>&nbsp;{{- .Site.Author.intro -}}</span><br>
     <span class="header-sub">{{- .Site.Author.role -}}</span>
 </h1>
 {{- else if eq $kind "section"}}

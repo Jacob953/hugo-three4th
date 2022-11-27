@@ -1,3 +1,13 @@
 .disaplay-show {
     display: block;
 }
+
+@mixin disaplay-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin disaplay-flex-col {
+    display: flex;
+    flex-direction: column;
+}

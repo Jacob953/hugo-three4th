@@ -1,5 +1,5 @@
 #e-nav-sitemap {
-    display: flex;
+    @include disaplay-flex-row;
     -webkit-box-align: center;
     align-items: center;
 }

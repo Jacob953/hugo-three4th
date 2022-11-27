@@ -2,19 +2,16 @@
 $site-link-l: 34px;
 $site-link-s: 32px;
 
-$font-size-external-links: 45px;
+$font-size-social-links: 45px;
 $font-size-site-subscribe: 32px;
-$font-size-timeline-before: 1rem;
 
-// ratio
-$golden-ratio: 1.618;
-$height-font-ratio: 1.48;
-$paragraph-height-ratio: 0.754;
+$font-size-border: 2px;
+$font-size-timeline-before: 0.7rem;
 
 @mixin typography-font-size($p-font-size: 16px) {
-    $s-font-size: $golden-ratio * $p-font-size;
+    $s-font-size: $ratio-golden * $p-font-size;
 
-    .p-post, .footer-item {
+    .p-post, .footer-item, .p-section {
         @include font-size-post($p-font-size)
     }
 
@@ -28,8 +25,8 @@ $paragraph-height-ratio: 0.754;
 
 
 @mixin font-size-header($font-size: 16px) {
-    $sub-font-size: $font-size / $golden-ratio;
-    $margin-bottom: $paragraph-height-ratio * $height-font-ratio * $font-size;
+    $sub-font-size: $font-size / $ratio-golden;
+    $margin-bottom: $ratio-paragraph-height * $ratio-height-font * $font-size;
     
     span {
         font-weight: normal;
@@ -44,10 +41,10 @@ $paragraph-height-ratio: 0.754;
 }
 
 @mixin font-size-headers($font-size: 16px) {
-    $h4-font-size: $font-size * $golden-ratio;
-    $h3-font-size: $h4-font-size * $golden-ratio;
-    $h2-font-size: $h3-font-size * $golden-ratio;
-    $h1-font-size: $h2-font-size * $golden-ratio;
+    $h4-font-size: $font-size * $ratio-golden;
+    $h3-font-size: $h4-font-size * $ratio-golden;
+    $h2-font-size: $h3-font-size * $ratio-golden;
+    $h1-font-size: $h2-font-size * $ratio-golden;
 
     .header-1 {
         @include font-size-header($h1-font-size)
@@ -67,9 +64,9 @@ $paragraph-height-ratio: 0.754;
 }
 
 @mixin font-size-post($font-size: 16px) {
-    $font-size: $font-size * $golden-ratio;
-    $line-height: $height-font-ratio * $font-size;
-    $margin-bottom: $paragraph-height-ratio * $line-height;
+    $font-size: $font-size * $ratio-golden;
+    $line-height: $ratio-height-font * $font-size;
+    $margin-bottom: $ratio-paragraph-height * $line-height;
 
     font-size: $font-size;
     margin-bottom: $margin-bottom;

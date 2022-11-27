@@ -1,7 +1,6 @@
 nav {
-    display: flex;
-    flex-direction: row;
-    padding: $space-nav-padding;
-    -webkit-box-pack: justify;
+    @include disaplay-flex-row;
+
+    padding: $padding-nav;
     justify-content: space-between;
 }
