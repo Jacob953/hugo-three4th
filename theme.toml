@@ -1,9 +1,18 @@
 name = "hugo-three4th"
-license = "Apache License 2.0"
+license = "MIT"
+licenselink = "https://github.com/Jacob953/hugo-three4th/blob/master/LICENSE"
 description = "A digital garden theme for hugo"
+
+# The home page of the theme, where the source can be found.
+homepage = "https://github.com/Jacob953/hugo-three4th"
+
+# If you have a running demo of the theme.
+demosite = "https://jacob953.com"
+
 disaplay = ["entry", "card", "book", "timeline"]
 status = ["sprout", "bloom", "mature"]
 
+# If the theme has a single author
 [author]
-  name = "Jacob953"
-  email = "i@jacob953.com"
+    name = "Jacob953"
+    homepage = "https://github.com/Jacob953"
