@@ -39,7 +39,7 @@ theme = "hugo-three4th"
     weight = 3
   [[menu.main]]
     name = "Releases"
-    url = "/cassette"
+    url = "/releases"
     weight = 2
   [[menu.main]]
     name = "Wiki"

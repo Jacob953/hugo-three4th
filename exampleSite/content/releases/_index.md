@@ -1,7 +1,7 @@
 ---
-title: "Cassette"
+title: "Releases"
 disaplay: timeline
-def: Please write your defination here.
+preface: Please write your defination here.
 ---
 
 Please write your foreward here.
