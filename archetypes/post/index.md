@@ -4,7 +4,7 @@ date: {{ .Date }}
 lastmod: 
 status: sprout
 cover: hugo-logo-wide.svg
-preface:
+preface: Preface of post
 ---
 <!-- status: sprout, bloom, mature (completion: sprout < bloom < mature ) -->
 
