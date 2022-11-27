@@ -1,5 +1,6 @@
-#e-nav-sitemap > .c-sitemap-item {
+#e-nav-sitemap .c-sitemap-item {
     @include disaplay-flex-row;
     
+    padding: 1rem;
     margin-right: 1rem;
 }
