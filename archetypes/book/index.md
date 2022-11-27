@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 status: sprout
 cover: hugo-logo-wide.svg
-bookname: three4th
-bookauthor: Jacob953
+author: Jacob953
+url: 
 ---
 <!-- status: sprout, bloom, mature (completion: sprout < bloom < mature ) -->
