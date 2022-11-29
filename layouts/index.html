@@ -6,8 +6,8 @@
 <div class="p-home">
   {{/*  check all sections and do not show timeline style  */}}
   {{- range .Pages }}
-  {{- $disaplay := .Params.disaplay -}}
-  {{- if ne $disaplay "timeline" }}
+  {{- $display := .Params.display -}}
+  {{- if ne $display "timeline" }}
   <div class="e-homepage-section">
 
     {{/*  section preface  */}}
@@ -20,9 +20,9 @@
     {{/*  section sequences  */}}
     <div class="s-grid-common">
     {{- range first 6 .Pages }}
-    {{- if eq $disaplay "book" }}{{ .Render "renders/book" }}
-    {{- else if eq $disaplay "entry" }}{{ .Render "renders/entry" }}
-    {{- else if eq $disaplay "cover" }}{{ .Render "renders/cover" }}
+    {{- if eq $display "book" }}{{ .Render "renders/book" }}
+    {{- else if eq $display "entry" }}{{ .Render "renders/entry" }}
+    {{- else if eq $display "cover" }}{{ .Render "renders/cover" }}
     {{- end }}
     {{- end }}
     </div>

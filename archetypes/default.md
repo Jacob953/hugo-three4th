@@ -1,13 +1,13 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-disaplay: entry
+display: entry
 preface: Please write your defination here.
 ---
 <!----------------------ATTENTION----------------------------
 
-disaplay: entry, cover, book, timeline.
+display: entry, cover, book, timeline.
 
-Please follow the specific kind of archetypes in the case of disaplay below:
+Please follow the specific kind of archetypes in the case of display below:
 
     case: entry, cover, timeline
         

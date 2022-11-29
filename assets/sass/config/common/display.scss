@@ -1,17 +1,17 @@
-.disaplay-block-none {
+.display-block-none {
     display: none;
 }
 
-.disaplay-block-show {
+.display-block-show {
     display: block;
 }
 
-@mixin disaplay-flex-row {
+@mixin display-flex-row {
     display: flex;
     flex-direction: row;
 }
 
-@mixin disaplay-flex-col {
+@mixin display-flex-col {
     display: flex;
     flex-direction: column;
 }

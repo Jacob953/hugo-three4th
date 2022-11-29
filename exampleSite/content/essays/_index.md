@@ -1,6 +1,6 @@
 ---
 title: "Essays"
-disaplay: entry
+display: entry
 preface: Please write your defination here.
 ---
 
@@ -8,9 +8,9 @@ Please write your foreward here.
 
 <!----------------------ATTENTION----------------------------
 
-disaplay: entry, card, book, timeline.
+display: entry, card, book, timeline.
 
-Please follow the specific kind of archetypes in the case of disaplay below:
+Please follow the specific kind of archetypes in the case of display below:
 
     case: entry, card, timeline
         

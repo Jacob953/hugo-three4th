@@ -25,7 +25,7 @@
 		</span>
 		{{ end -}}
 	</div>
-	<div id="drop-div-{{ $sitemap_name | lower }}" class="c-drop-content c-drop-content-{{ $sitemap_name | lower }} disaplay-block-none">
+	<div id="drop-div-{{ $sitemap_name | lower }}" class="c-drop-content c-drop-content-{{ $sitemap_name | lower }} display-block-none">
 		{{- range .Children }} 
 		<div class="c-sitemap-item"><a class="link-common" href="{{ .URL }}">{{ .Name }}</a></div>
 		{{ end -}}

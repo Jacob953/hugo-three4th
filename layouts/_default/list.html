@@ -1,24 +1,24 @@
 {{- define "main" }}
-{{ $disaplay := .Params.disaplay }}
+{{ $display := .Params.display }}
 <div class="p-section">
     <span>{{ .Content }}</span>
     <!-- timeline -->
-    {{- if eq $disaplay "timeline" }}
+    {{- if eq $display "timeline" }}
     <div class="s-grid-flex">    
         {{- range .Pages.ByLastmod }}{{ .Render "renders/timeline" }}{{ end -}}
     </div>
     {{- else }}
     <div class="s-grid-common">    
         <!-- entry -->
-        {{- if eq $disaplay "entry"}}
+        {{- if eq $display "entry"}}
         {{- range .Pages.ByLastmod }}{{ .Render "renders/entry" }}{{ end -}}
         
         <!-- cover -->
-        {{- else if eq $disaplay "cover"}}
+        {{- else if eq $display "cover"}}
         {{- range .Pages.ByLastmod }}{{ .Render "renders/cover" }}{{ end -}}
         
         <!-- book -->
-        {{- else if eq $disaplay "book"}}
+        {{- else if eq $display "book"}}
         {{- range .Pages.ByLastmod }}{{ .Render "renders/book" }}{{ end -}}
         {{- end }}
     </div>
