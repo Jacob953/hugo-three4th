@@ -1,7 +1,7 @@
 {{- $kind := .Kind -}}
 {{- if eq $kind "home"}}
 <h1 class="header-common header-1 e-homepage-header">
-    {{- .Title -}}
+    {{- .Site.Author.name -}}
     <span>&nbsp;{{- .Site.Author.intro -}}</span><br>
     <span class="header-sub">{{- .Site.Author.role -}}</span>
 </h1>
