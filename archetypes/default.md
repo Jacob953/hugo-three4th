@@ -1,23 +1,23 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-display: entry
+display: note
 preface: Please write your defination here.
 ---
 <!----------------------ATTENTION----------------------------
 
-display: entry, cover, book, timeline.
+display: note, essay, blog, illustration.
 
 Please follow the specific kind of archetypes in the case of display below:
 
-    case: entry, cover, timeline
+    case: note, essay, blog
         
         `hugo new --kind post <dir>/<title>`
         eg: hugo new --kind post essays/database
     
-    case: book
+    case: illustration
         
-        `hugo new --kind book <dir>/<title>`
-        eg: hugo new --kind book library/database 
+        `hugo new --kind illustration <dir>/<title>`
+        eg: hugo new --kind illustration library/database 
 
 ------------------------------------------------------------> 
 
