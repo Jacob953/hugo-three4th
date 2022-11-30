@@ -9,8 +9,8 @@ homepage = "https://github.com/Jacob953/hugo-three4th"
 # If you have a running demo of the theme.
 demosite = "https://jacob953.com"
 
-display = ["entry", "card", "book", "timeline"]
-status = ["sprout", "bloom", "mature"]
+display = ["note", "essay", "blog", "illustration"]
+status = ["sow", "grow", "mature"]
 
 # If the theme has a single author
 [author]
