@@ -72,7 +72,11 @@ $font-size-timeline-before: 0.7rem;
     margin-bottom: $margin-bottom;
     line-height: $line-height;
 
-    p {
+    p, ul {
         padding-bottom: $ratio-paragraph-height * $ratio-height-font * $font-size;;
+    }
+
+    ul {
+        padding-left: $padding-ul-left;
     }
 }
