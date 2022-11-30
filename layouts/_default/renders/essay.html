@@ -4,7 +4,7 @@
         {{ .Title }}<br>
         <span class="header-common header-sub">
             <span class="cao">{{ partial "utils/status" .Params.status }}</span>
-            {{ .Date.Format "Mon, Jan 2, 2006" }}
+            {{ .Params.preface }}
         </span>
     </h3>
 </a>
