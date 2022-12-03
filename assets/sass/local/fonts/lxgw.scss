@@ -2,7 +2,7 @@
     font-family: 'LXGWWenKaiGBScreen';
     font-weight: 400;
     font-style: normal;
-    src: url("/fonts/LXGWWenKaiGBScreen.ttf") format('ttf');
+    src: url("/fonts/LXGWWenKaiGBScreen.ttf") format('truetype');
 }
 
-$lxgw: 'LXGWWenKaiGBScreen';
+$lxgw: 'LXGWWenKaiGBScreen', sans-serif;
