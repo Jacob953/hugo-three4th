@@ -1,10 +1,7 @@
-<a class="common-link s-section-item s-section-cover" href="{{ .Permalink }}">
-    <img class="common-img e-section-cover" src="{{ .Permalink }}images/{{ .Params.cover }}" />
+<a class="common-link s-section-item s-section-entry" href="{{ .Permalink }}" >
+    <span class="e-section-icon cao">{{ partial "utils/status" .Params.status }}</span>
     <h3 class="header-common header-3 e-section-header">
         {{ .Title }}<br>
-        <span class="header-common header-sub">
-            <span class="cao">{{ partial "utils/status" .Params.status }}</span>
-            {{ .Params.preface }}
-        </span>
+        <span class="header-common header-sub">{{- .Params.preface -}}</span>
     </h3>
 </a>
