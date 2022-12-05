@@ -1,6 +1,6 @@
 ---
 title: "Test Font"
-display: note
+display: cover-without
 status: sow
 cover: hugo-logo-wide.svg
 ---

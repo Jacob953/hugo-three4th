@@ -1,11 +1,9 @@
 ---
-title: "Date3"
-date: 2022-11-11T00:09:43+08:00
-display: blog
-status: sprout
+title: "Card1"
+display: cover-with
+status: sow
 cover: hugo-logo-wide.svg
 ---
-
 <!-- status: sprout, bloom, mature (completion: sprout < bloom < mature ) -->
 
 Please start your post here!
