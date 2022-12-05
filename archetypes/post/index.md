@@ -10,19 +10,19 @@ preface: Preface of post
 
 <!----------------------ATTENTION----------------------------
 
-display: note, essay, blog, illustration.
+display: blog, cover-link, cover-with, cover-without.
 
 Please follow the specific kind of archetypes in the case of display below:
 
-    case: note, essay, blog
+    case: blog, cover-with, cover-without
         
-        `hugo new --kind post <dir>/<title>`
-        eg: hugo new --kind post essays/database
+        `hugo new --kind blog <dir>/<title>`
+        eg: hugo new --kind blog essays/database
     
-    case: illustration
+    case: cover-link
         
-        `hugo new --kind illustration <dir>/<title>`
-        eg: hugo new --kind illustration library/database 
+        `hugo new --kind cover-link <dir>/<title>`
+        eg: hugo new --kind cover-link library/database 
 
 ------------------------------------------------------------> 
 
