@@ -1,7 +1,5 @@
-footer {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    
+footer {    
+    margin: 0 auto;
     padding: $padding-footer;
     padding-bottom: $padding-footer-bottom;
 }
