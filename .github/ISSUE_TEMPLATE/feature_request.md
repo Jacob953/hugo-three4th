@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: Suggest an idea for Hugo-Three4Th
-title: Give us a brief explanation of your idea
+title: 'Feature: Give us a brief explanation of your idea'
 labels: feature
 assignees: ''
 

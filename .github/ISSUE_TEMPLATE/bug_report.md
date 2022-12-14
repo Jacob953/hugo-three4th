@@ -1,34 +1,38 @@
 ---
 name: Bug report
-about: Create a report to help Hugo-Three4Th improve
-title: Give us information of the bug as much as possible
-labels: bug
+about: Create a report to help us improve
+title: ''
+labels: ''
 assignees: ''
 
 ---
 
-## Bug Report
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-**For English only**, other languages will not accept.
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
-Before report a bug, make sure you have:
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
-- Searched open and closed [GitHub issues](https://github.com/Jacob953/hugo-three4th/issues).
-- Read documentation: [Hugo-Three4Th Wiki](https://github.com/Jacob953/hugo-three4th/wiki).
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
 
-Please pay attention on issues you submitted, because we maybe need more details. 
-If no response anymore and we cannot reproduce it on current information, we will **close it**.
+**Desktop (please complete the following information):**
+ - OS: [e.g. iOS]
+ - Browser [e.g. chrome, safari]
+ - Version [e.g. 22]
 
-Please answer these questions before submitting your issue. Thanks!
+**Smartphone (please complete the following information):**
+ - Device: [e.g. iPhone6]
+ - OS: [e.g. iOS8.1]
+ - Browser [e.g. stock browser, safari]
+ - Version [e.g. 22]
 
-### Which version of Three4Th did you use?
-
-### Expected behavior
-
-### Actual behavior
-
-### Reason analyze (If you can)
-
-### Steps to reproduce the behavior
-
-### Example codes for reproduce this issue (such as a github link).
+**Additional context**
+Add any other context about the problem here.
