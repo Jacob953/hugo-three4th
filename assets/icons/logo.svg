@@ -1,0 +1,13 @@
+
+<svg width="270px" height="448px" viewBox="0 0 270 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="40.2273118%" y1="4.40173289e-15%" x2="40.2273118%" y2="100%" id="linearGradient-u6j1cjf4_c-1">
+            <stop stop-color="#32C5FF" offset="0%"></stop>
+            <stop stop-color="#B620E0" offset="51.2583893%"></stop>
+            <stop stop-color="#F7B500" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="black-1" fill="url(#linearGradient-u6j1cjf4_c-1)" points="0.607674873 155.491869 107.031753 447.854998 270.060645 -0.0632022618 106.068526 94.6093698 106.068526 281.168216"></polygon>
+    </g>
+</svg>

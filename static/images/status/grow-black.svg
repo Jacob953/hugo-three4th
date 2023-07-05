@@ -1,0 +1,9 @@
+
+<svg width="51px" height="31px" viewBox="0 0 51 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(0.777085, 0.860320)" fill="#000000" stroke="#FFFFFF" stroke-width="0.5">
+            <path d="M0.632996081,0.365444397 L23.6653843,4.42577201 L11.1472478,6.63341132 L24.8547351,14.5474328 L24.8541762,29.2311228 L0.632996081,0.365444397 Z" id="Triangle" transform="translate(12.552560, 14.958981) scale(1, -1) translate(-12.552560, -14.958981) "></path>
+            <path d="M49.3670178,10.8153281 L34.3344769,28.7317976 L38.6816734,16.7869537 L24.9741861,24.7009752 L12.2580169,17.3586461 L49.3670178,10.8153281 Z" id="Triangle" transform="translate(30.769105, 20.214264) scale(1, -1) translate(-30.769105, -20.214264) "></path>
+        </g>
+    </g>
+</svg>
