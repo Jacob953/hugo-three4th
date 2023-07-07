@@ -1,3 +1,3 @@
-{{- if eq . "sow" }}幼{{- end }}
-{{- if eq . "grow" }}越{{- end }}
-{{- if eq . "mature" }}成{{- end }}
+{{- if eq . "sow" }}{{ readFile "static/images/status/sow-black.svg" | safeHTML }}{{- end }}
+{{- if eq . "grow" }}{{ readFile "static/images/status/grow-black.svg" | safeHTML }}{{- end }}
+{{- if eq . "mature" }}{{ readFile "static/images/status/mature-black.svg" | safeHTML }}{{- end }}
