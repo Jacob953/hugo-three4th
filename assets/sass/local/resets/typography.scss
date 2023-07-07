@@ -6,10 +6,6 @@ nav, footer {
     font-family: $oblique;
 }
 
-.cao {
-    font-family: $cao;
-}
-
 @media only screen and (max-width: $screen-small) {
     $p-font-size: 7px;
     @include typography-font-size($p-font-size);
