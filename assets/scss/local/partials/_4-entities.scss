@@ -1,0 +1,55 @@
+// @import "4-entities/e-footer-sitemap.scss";
+
+#e-footer-sitemap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+// @import "4-entities/e-nav-sitemap.scss";
+
+#e-nav-sitemap {
+    display: flex;
+    flex-direction: row;
+
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+// @import "4-entities/e-nav-icon.scss";
+
+.e-nav-icon {
+    margin: 0 $margin-icon-nav;
+}
+
+// @import "4-entities/e-page-header.scss";
+
+.e-page-header {
+    padding: 0 $padding-post;
+}
+
+// @import "4-entities/e-section-icon.scss";
+
+.e-section-icon {
+    line-height: inherit;
+    margin-right: $margin-icon-section-right;
+}
+
+// @import "4-entities/e-section-header.scss";
+
+.e-section-header {
+    margin-bottom: 0;
+}
+
+// @import "4-entities/e-section-cover.scss";
+
+.e-section-cover {
+    margin-bottom: $space-flex-item;
+}
+
+// @import "4-entities/e-section-blog.scss";
+
+.e-section-blog {
+    padding: 0;
+}

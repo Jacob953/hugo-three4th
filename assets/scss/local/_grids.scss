@@ -1,0 +1,31 @@
+// @import "grids/nav.scss";
+
+nav {
+    display: flex;
+    flex-direction: row;
+
+    padding: $padding-nav;
+    justify-content: space-between;
+}
+
+// @import "grids/header.scss";
+
+header {
+    padding: 0 $padding-header;
+    margin: $margin-header 0;
+}
+
+// @import "grids/main.scss";
+
+main {
+    padding: 0 $padding-main;
+    margin: $margin-main 0;
+}
+
+// @import "grids/footer.scss";
+
+footer {    
+    margin: 0 auto;
+    padding: $padding-footer;
+    padding-bottom: $padding-footer-bottom;
+}

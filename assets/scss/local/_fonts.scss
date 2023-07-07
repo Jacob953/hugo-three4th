@@ -1,0 +1,27 @@
+// @import "fonts/oblique.scss";
+
+@font-face {
+    font-family: 'SmileySans-Oblique';
+    font-weight: 400;
+    font-style: normal;
+    src: url("/fonts/SmileySans-Oblique.otf.woff2") format('woff2');
+}
+
+$oblique: 'SmileySans-Oblique';
+
+// @import "fonts/zcool.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+
+$zcool: 'ZCOOL XiaoWei', sans-serif;
+
+// @import "fonts/lxgw.scss";
+
+@font-face {
+    font-family: 'LXGWWenKaiGBScreen';
+    font-weight: 400;
+    font-style: normal;
+    src: url("/fonts/LXGWWenKaiGBScreen.ttf") format('truetype');
+}
+
+$lxgw: 'LXGWWenKaiGBScreen', sans-serif;

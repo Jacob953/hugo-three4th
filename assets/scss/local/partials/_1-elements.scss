@@ -1,0 +1,55 @@
+// @import "1-elements/header-common.scss";
+
+.header-common {
+    font-weight: bold;
+}
+
+// @import "1-elements/link-common.scss";
+
+.link-common {
+    white-space: nowrap;
+    margin-right: $space-flex-item;
+}
+
+// @import "1-elements/site-title.scss";
+
+@media only screen and (min-width: $screen-large) {
+    #site-title {
+        font-size: $site-link-l;
+    }
+}
+
+@media only screen and (max-width: $screen-large) {
+    #site-title {
+        font-size: $site-link-s;
+    }
+}
+
+// @import "1-elements/site-intro.scss";
+
+#site-intro {
+    font-weight: normal;
+}
+
+// @import "1-elements/site-role.scss";
+
+#site-role {
+    font-size: 1em / $ratio-golden;
+    font-weight: normal;
+}
+
+// @import "1-elements/header-sub.scss";
+
+.header-sub {
+    color: $color-header-sub;
+}
+
+// @import "1-elements/btn-subscribe.scss";
+
+#btn-subscribe {
+    font-size: 1.5rem;
+    padding: 4px 15px;
+    margin: 15px;
+    border: 1px solid;
+    border-radius: 3rem;
+}

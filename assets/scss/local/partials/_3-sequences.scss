@@ -1,0 +1,81 @@
+// @import "3-sequences/s-grid.scss";
+
+.s-grid-common {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 560px));
+}
+
+// @import "3-sequences/s-flex.scss";
+
+.s-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+// @import "3-sequences/s-section-item.scss";
+
+.s-section-item {
+    line-height: 100%;
+
+    padding: $padding-section-item-col $padding-section-item-row;
+    margin: $margin-section-item;
+
+    border: $font-size-border solid;
+    border-radius: 0.4rem;
+
+    cursor: pointer;
+}
+
+.s-section-item:hover {
+    transform: scale3d(1.02, 1.02, 1.02);
+}
+
+// @import "3-sequences/s-section-entry.scss";
+
+.s-section-entry {
+    display: flex;
+    flex-direction: row;
+}
+
+// @import "3-sequences/s-section-cover.scss";
+
+.s-section-cover {
+    display: flex;
+    flex-direction: column;
+}
+
+// @import "3-sequences/s-section-book.scss";
+
+.s-section-book {
+    border: 0;
+}
+
+// @import "3-sequences/s-section-timeline.scss";
+
+.s-section-timeline {
+    display: flex;
+    flex-direction: column;
+    border-left: $font-size-border dashed;
+
+    margin: 0 $margin-post;
+    margin-bottom: $margin-post-bottom;
+    
+    padding: 0 $padding-timeline;
+}
+
+
+.s-section-timeline::before {
+    display: inline-block;
+    position: relative;
+    
+    content: "";
+    width: $font-size-timeline-before;
+    height: $font-size-timeline-before;
+
+    border: $font-size-border solid;
+    border-radius: $font-size-timeline-before;
+
+    background-color: white;
+
+    margin-left: $margin-timeline-before;
+}

@@ -1,0 +1,41 @@
+// @import "2-components/c-sitemap-item.scss";
+
+#e-nav-sitemap .c-sitemap-item {
+    display: flex;
+    flex-direction: row;
+
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+// @import "2-components/c-drop-content.scss";
+
+.c-drop-content {
+    position: absolute;
+    top: 4.5rem;
+    
+    z-index: 5;
+
+    min-width: 3rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+// @import "2-components/c-site-footer.scss";
+
+#c-site-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1fr, 2fr));
+    max-width: 1400px;
+}
+
+// @import "2-components/c-site-subscribe.scss";
+
+#c-site-subscribe {
+    font-size: $font-size-site-subscribe;
+}
+
+// @import "2-components/c-social-links.scss";
+
+#c-social-links {
+    font-size: $font-size-social-links;
+}
